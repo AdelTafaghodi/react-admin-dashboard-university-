@@ -26,13 +26,13 @@ const Sidebar = () => {
     <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
       {activeMenu && (
         <Fragment>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-center items-center">
             <Link
               to={"/"}
               onClick={handleCloseSidebar}
-              className="items-center flex font-extrabold tracking-tight gap-3 ml-3 mt-4 text-xl dark:text-white text-slate-900 "
+              className="items-center flex font-extrabold tracking-tight gap-3  mt-4 text-xl dark:text-white text-slate-900 "
             >
-              <SiShopware /> <span>Shoppy</span>
+              <span>Shoppy</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
