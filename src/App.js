@@ -19,9 +19,7 @@ import {
   Bar,
   Pie,
   Financial,
-  ColorPicker,
   ColorMapping,
-  Editor,
 } from "./pages";
 
 import "./App.css";
@@ -73,9 +71,7 @@ const App = () => {
 
                 {/* Apps */}
                 <Route path="/kanban" element={<Kanban />} />
-                <Route path="/editor" element={<Editor />} />
                 <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
 
                 {/* Charts */}
                 <Route path="/line" element={<Line />} />
