@@ -514,7 +514,7 @@ export const links = [
     title: "پنل",
     links: [
       {
-        name: "فروشگاه",
+        name: "ecommerce",
         icon: <FiShoppingBag />,
       },
     ],
@@ -524,15 +524,15 @@ export const links = [
     title: "صفحات",
     links: [
       {
-        name: "سفارشات",
+        name: "orders",
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: "کارمندان",
+        name: "employees",
         icon: <IoMdContacts />,
       },
       {
-        name: "مشتری ها",
+        name: "customers",
         icon: <RiContactsLine />,
       },
     ],
@@ -541,11 +541,11 @@ export const links = [
     title: "برنامه ها",
     links: [
       {
-        name: "تقویم",
+        name: "calendar",
         icon: <AiOutlineCalendar />,
       },
       {
-        name: "jira",
+        name: "kanban",
         icon: <BsKanban />,
       }
     ],
