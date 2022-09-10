@@ -402,7 +402,7 @@ export const LinePrimaryXAxis = {
   background: "white",
 };
 
-export const LinePrimaryYAxis = {
+export const  LinePrimaryYAxis = {
   labelFormat: "{value}%",
   rangePadding: "None",
   minimum: 0,
@@ -2981,7 +2981,7 @@ export const lineCustomSeries = [
     dataSource: lineChartData[2],
     xName: "x",
     yName: "y",
-    name: "India",
+    name: "Iran",
     width: "2",
     marker: { visible: true, width: 10, height: 10 },
     type: "Line",
