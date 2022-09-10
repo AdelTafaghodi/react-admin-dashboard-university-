@@ -10,7 +10,8 @@ import { useStateContext } from "../contexts/ContextProvider";
 import { links } from "../data/dummy";
 
 const Sidebar = () => {
-  const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+  const { activeMenu, setActiveMenu, screenSize, currentColor } =
+    useStateContext();
   const activeLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2";
   const normalLink =
@@ -26,13 +27,13 @@ const Sidebar = () => {
     <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
       {activeMenu && (
         <Fragment>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-between items-center">
             <Link
               to={"/"}
               onClick={handleCloseSidebar}
               className="items-center flex font-extrabold tracking-tight gap-3  mt-4 text-xl dark:text-white text-slate-900 "
             >
-              <span>Shoppy</span>
+              <span>پنل ادمین</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
@@ -54,6 +55,9 @@ const Sidebar = () => {
                   <NavLink
                     to={`/${link.name}`}
                     key={link.name}
+                    style={({ isActive }) => ({
+                      backgroundColor: isActive ? currentColor : "",
+                    })}
                     onClick={handleCloseSidebar}
                     className={({ isActive }) =>
                       isActive ? activeLink : normalLink

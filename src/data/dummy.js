@@ -511,55 +511,47 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: "Dashboard",
+    title: "پنل",
     links: [
       {
-        name: "ecommerce",
+        name: "فروشگاه",
         icon: <FiShoppingBag />,
       },
     ],
   },
 
   {
-    title: "Pages",
+    title: "صفحات",
     links: [
       {
-        name: "orders",
+        name: "سفارشات",
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: "employees",
+        name: "کارمندان",
         icon: <IoMdContacts />,
       },
       {
-        name: "customers",
+        name: "مشتری ها",
         icon: <RiContactsLine />,
       },
     ],
   },
   {
-    title: "Apps",
+    title: "برنامه ها",
     links: [
       {
-        name: "calendar",
+        name: "تقویم",
         icon: <AiOutlineCalendar />,
       },
       {
-        name: "kanban",
+        name: "jira",
         icon: <BsKanban />,
-      },
-      {
-        name: "editor",
-        icon: <FiEdit />,
-      },
-      {
-        name: "color-picker",
-        icon: <BiColorFill />,
-      },
+      }
     ],
   },
   {
-    title: "Charts",
+    title: "نمودار ها",
     links: [
       {
         name: "line",
@@ -622,26 +614,26 @@ export const cartData = [
 export const chatData = [
   {
     image: avatar2,
-    message: "Roman Joined the Team!",
-    desc: "Congratulate him",
+    message: "ندا به تیم پیوست",
+    desc: "تبریک بگویید",
     time: "9:08 AM",
   },
   {
     image: avatar3,
-    message: "New message received",
-    desc: "Salma sent you new message",
+    message: "پیام جدید دریافت کردید",
+    desc: "فرهاد پیام ارسال کرد",
     time: "11:56 AM",
   },
   {
     image: avatar4,
-    message: "New Payment received",
-    desc: "Check your earnings",
+    message: "رسید خرید",
+    desc: "موجودی را بررسی کنید",
     time: "4:39 AM",
   },
   {
     image: avatar,
-    message: "Jolly completed tasks",
-    desc: "Assign her new tasks",
+    message: "سینا وظیفه اش را تکمیل کرد",
+    desc: "ابلاغ وظیفه جدید",
     time: "1:12 AM",
   },
 ];
@@ -651,7 +643,7 @@ export const earningData = [
     icon: <MdOutlineSupervisorAccount />,
     amount: "39,354",
     percentage: "-4%",
-    title: "Customers",
+    title: "مشتری ها",
     iconColor: "#03C9D7",
     iconBg: "#E5FAFB",
     pcColor: "red-600",
@@ -660,7 +652,7 @@ export const earningData = [
     icon: <BsBoxSeam />,
     amount: "4,396",
     percentage: "+23%",
-    title: "Products",
+    title: "محصولات",
     iconColor: "rgb(255, 244, 229)",
     iconBg: "rgb(254, 201, 15)",
     pcColor: "green-600",
@@ -669,7 +661,7 @@ export const earningData = [
     icon: <FiBarChart />,
     amount: "423,39",
     percentage: "+38%",
-    title: "Sales",
+    title: "حراجی",
     iconColor: "rgb(228, 106, 118)",
     iconBg: "rgb(255, 244, 229)",
     pcColor: "green-600",
@@ -678,7 +670,7 @@ export const earningData = [
     icon: <HiOutlineRefresh />,
     amount: "39,354",
     percentage: "-12%",
-    title: "Refunds",
+    title: "بازپرداخت",
     iconColor: "rgb(0, 194, 146)",
     iconBg: "rgb(235, 250, 242)",
     pcColor: "red-600",
@@ -689,7 +681,7 @@ export const recentTransactions = [
   {
     icon: <BsCurrencyDollar />,
     amount: "+$350",
-    title: "Paypal Transfer",
+    title: "انتقال پی پال",
     desc: "Money Added",
     iconColor: "#03C9D7",
     iconBg: "#E5FAFB",
@@ -699,7 +691,7 @@ export const recentTransactions = [
     icon: <BsShield />,
     amount: "-$560",
     desc: "Bill Payment",
-    title: "Wallet",
+    title: "کیف پول",
     iconColor: "rgb(0, 194, 146)",
     iconBg: "rgb(235, 250, 242)",
     pcColor: "red-600",
@@ -707,7 +699,7 @@ export const recentTransactions = [
   {
     icon: <FiCreditCard />,
     amount: "+$350",
-    title: "Credit Card",
+    title: "کارت اعتباری",
     desc: "Money reversed",
     iconColor: "rgb(255, 244, 229)",
     iconBg: "rgb(254, 201, 15)",
@@ -717,7 +709,7 @@ export const recentTransactions = [
   {
     icon: <TiTick />,
     amount: "+$350",
-    title: "Bank Transfer",
+    title: "انتقالات بین بانکی",
     desc: "Money Added",
 
     iconColor: "rgb(228, 106, 118)",
@@ -728,7 +720,7 @@ export const recentTransactions = [
     icon: <BsCurrencyDollar />,
     amount: "-$50",
     percentage: "+38%",
-    title: "Refund",
+    title: "بازپرداخت",
     desc: "Payment Sent",
     iconColor: "#03C9D7",
     iconBg: "#E5FAFB",
@@ -740,24 +732,24 @@ export const weeklyStats = [
   {
     icon: <FiShoppingCart />,
     amount: "-$560",
-    title: "Top Sales",
-    desc: "Johnathan Doe",
+    title: "بهترین فروشنده",
+    desc: "حسام محمدی",
     iconBg: "#FB9678",
     pcColor: "red-600",
   },
   {
     icon: <FiStar />,
     amount: "-$560",
-    title: "Best Seller",
-    desc: "MaterialPro Admin",
+    title: "بهترین خریدار",
+    desc: "حسام محمدی",
     iconBg: "rgb(254, 201, 15)",
     pcColor: "red-600",
   },
   {
     icon: <BsChatLeft />,
     amount: "+$560",
-    title: "Most Commented",
-    desc: "Ample Admin",
+    title: "بیشترین نظرات",
+    desc: "ادمین سایت",
     iconBg: "#00C292",
     pcColor: "green-600",
   },
@@ -801,15 +793,15 @@ export const productsPerformance = [
 export const medicalproBranding = {
   data: [
     {
-      title: "Due Date",
+      title: "سررسید",
       desc: "Oct 23, 2021",
     },
     {
-      title: "Budget",
+      title: "بودجه",
       desc: "$98,500",
     },
     {
-      title: "Expense",
+      title: "هزینه",
       desc: "$63,000",
     },
   ],
@@ -819,7 +811,7 @@ export const medicalproBranding = {
       color: "orange",
     },
     {
-      name: "Angular",
+      name: "ًReact",
       color: "#FB9678",
     },
   ],
@@ -872,22 +864,22 @@ export const themeColors = [
 export const userProfileData = [
   {
     icon: <BsCurrencyDollar />,
-    title: "My Profile",
-    desc: "Account Settings",
+    title: "پروفایل من",
+    desc: "تنظیمات اکانت",
     iconColor: "#03C9D7",
     iconBg: "#E5FAFB",
   },
   {
     icon: <BsShield />,
-    title: "My Inbox",
-    desc: "Messages & Emails",
+    title: "جعبه دریافتی",
+    desc: "پیام ها و ایمیل ها",
     iconColor: "rgb(0, 194, 146)",
     iconBg: "rgb(235, 250, 242)",
   },
   {
     icon: <FiCreditCard />,
-    title: "My Tasks",
-    desc: "To-do and Daily Tasks",
+    title: "وظایف",
+    desc: "وظایف روزانه",
     iconColor: "rgb(255, 244, 229)",
     iconBg: "rgb(254, 201, 15)",
   },
